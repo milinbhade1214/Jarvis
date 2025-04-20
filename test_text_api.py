@@ -9,8 +9,6 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 if not GROQ_API_KEY:
     raise RuntimeError("Missing GROQ_API_KEY in environment.")
 
-#GROQ_API_KEY = "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"  # Replace with your actual API key
-
 client = Groq(api_key=GROQ_API_KEY)
 
 prompt = "Who is the current prime minister of the UK?"
